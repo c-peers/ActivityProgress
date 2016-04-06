@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C49006411CA8E02800217B18 /* KDCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49006241CA8E02800217B18 /* KDCircularProgress.swift */; };
+		C490065C1CA9309800217B18 /* ActivityTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C490065B1CA9309800217B18 /* ActivityTableCell.swift */; };
+		C49006601CAA2C6000217B18 /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C490065F1CAA2C6000217B18 /* Activities.swift */; };
+		C49006621CAA2D3700217B18 /* ActivityStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49006611CAA2D3700217B18 /* ActivityStats.swift */; };
 		C4A432EC1CA6C4E0002DCEDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A432EB1CA6C4E0002DCEDD /* AppDelegate.swift */; };
-		C4A432EE1CA6C4E0002DCEDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A432ED1CA6C4E0002DCEDD /* ViewController.swift */; };
+		C4A432EE1CA6C4E0002DCEDD /* ActivityTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A432ED1CA6C4E0002DCEDD /* ActivityTableView.swift */; };
 		C4A432F11CA6C4E0002DCEDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4A432EF1CA6C4E0002DCEDD /* Main.storyboard */; };
 		C4A432F41CA6C4E0002DCEDD /* ActivityTimeTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4A432F21CA6C4E0002DCEDD /* ActivityTimeTracker.xcdatamodeld */; };
 		C4A432F61CA6C4E0002DCEDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4A432F51CA6C4E0002DCEDD /* Assets.xcassets */; };
@@ -35,9 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C49006241CA8E02800217B18 /* KDCircularProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KDCircularProgress.swift; path = "KDCircularProgress-master/KDCircularProgress/KDCircularProgress.swift"; sourceTree = "<group>"; };
+		C490065B1CA9309800217B18 /* ActivityTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityTableCell.swift; sourceTree = "<group>"; };
+		C490065F1CAA2C6000217B18 /* Activities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
+		C49006611CAA2D3700217B18 /* ActivityStats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityStats.swift; sourceTree = "<group>"; };
 		C4A432E81CA6C4DF002DCEDD /* ActivityTimeTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActivityTimeTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A432EB1CA6C4E0002DCEDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C4A432ED1CA6C4E0002DCEDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C4A432ED1CA6C4E0002DCEDD /* ActivityTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableView.swift; sourceTree = "<group>"; };
 		C4A432F01CA6C4E0002DCEDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4A432F31CA6C4E0002DCEDD /* ActivityTimeTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ActivityTimeTracker.xcdatamodel; sourceTree = "<group>"; };
 		C4A432F51CA6C4E0002DCEDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -99,9 +107,13 @@
 		C4A432EA1CA6C4DF002DCEDD /* ActivityTimeTracker */ = {
 			isa = PBXGroup;
 			children = (
+				C49006241CA8E02800217B18 /* KDCircularProgress.swift */,
 				C4A432EB1CA6C4E0002DCEDD /* AppDelegate.swift */,
-				C4A432ED1CA6C4E0002DCEDD /* ViewController.swift */,
+				C4A432ED1CA6C4E0002DCEDD /* ActivityTableView.swift */,
+				C490065F1CAA2C6000217B18 /* Activities.swift */,
+				C49006611CAA2D3700217B18 /* ActivityStats.swift */,
 				C4A432EF1CA6C4E0002DCEDD /* Main.storyboard */,
+				C490065B1CA9309800217B18 /* ActivityTableCell.swift */,
 				C4A432F51CA6C4E0002DCEDD /* Assets.xcassets */,
 				C4A432F71CA6C4E0002DCEDD /* LaunchScreen.storyboard */,
 				C4A432FA1CA6C4E0002DCEDD /* Info.plist */,
@@ -262,9 +274,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C49006411CA8E02800217B18 /* KDCircularProgress.swift in Sources */,
 				C4A432F41CA6C4E0002DCEDD /* ActivityTimeTracker.xcdatamodeld in Sources */,
-				C4A432EE1CA6C4E0002DCEDD /* ViewController.swift in Sources */,
+				C49006621CAA2D3700217B18 /* ActivityStats.swift in Sources */,
+				C4A432EE1CA6C4E0002DCEDD /* ActivityTableView.swift in Sources */,
+				C490065C1CA9309800217B18 /* ActivityTableCell.swift in Sources */,
 				C4A432EC1CA6C4E0002DCEDD /* AppDelegate.swift in Sources */,
+				C49006601CAA2C6000217B18 /* Activities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +505,7 @@
 				C4A433151CA6C4E0002DCEDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4A433161CA6C4E0002DCEDD /* Build configuration list for PBXNativeTarget "ActivityTimeTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +514,7 @@
 				C4A433181CA6C4E0002DCEDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4A433191CA6C4E0002DCEDD /* Build configuration list for PBXNativeTarget "ActivityTimeTrackerUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +523,7 @@
 				C4A4331B1CA6C4E0002DCEDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
