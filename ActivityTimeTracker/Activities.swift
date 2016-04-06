@@ -18,6 +18,7 @@ class Activities: NSObject, NSCoding {
     var activityTimeRemaining: NSTimeInterval
     var activityComplete: Bool
     var activityInProgress: Bool
+    var currentAngle: Int
     
     /*
      // MARK: Initialization
@@ -28,6 +29,7 @@ class Activities: NSObject, NSCoding {
         self.activityTimeRemaining = NSTimeInterval()
         self.activityComplete = false
         self.activityInProgress = false
+	self.currentAngle = 0
     }
     
     init(activityName: String, activityTime: NSTimeInterval) {
@@ -36,16 +38,18 @@ class Activities: NSObject, NSCoding {
         self.activityTimeRemaining = activityTime
         self.activityComplete = false
         self.activityInProgress = false
-        
+	self.currentAngle = 0
+
         super.init()
     }
     
-    init(activityName: String, activityTime: NSTimeInterval, activityTimeRemaining: NSTimeInterval, activityComplete: Bool, activityInProgress: Bool) {
+    init(activityName: String, activityTime: NSTimeInterval, activityTimeRemaining: NSTimeInterval, activityComplete: Bool, activityInProgress: Bool, currentAngle: Int) {
         self.activityName = activityName
         self.activityTime = activityTime
         self.activityTimeRemaining = activityTimeRemaining
         self.activityComplete = activityComplete
         self.activityInProgress = activityInProgress
+	self.currentAngle = currentAngle
         
         super.init()
     }
@@ -61,6 +65,7 @@ class Activities: NSObject, NSCoding {
         static let timeRemainingKey = "timeRemainingKey"
         static let completeKey = "completeKey"
         static let inProgressKey = "inProgressKey"
+	static let angleKey = "angleKey"
         
     }
     
@@ -70,6 +75,7 @@ class Activities: NSObject, NSCoding {
         aCoder.encodeObject(activityTimeRemaining, forKey: PropertyKey.timeRemainingKey)
         aCoder.encodeObject(activityComplete, forKey: PropertyKey.completeKey)
         aCoder.encodeObject(activityInProgress, forKey: PropertyKey.inProgressKey)
+        aCoder.encodeObject(currentAngle, forKey: PropertyKey.angleKey)
         
     }
     
@@ -79,9 +85,10 @@ class Activities: NSObject, NSCoding {
         let activityTimeRemaining = aDecoder.decodeObjectForKey(PropertyKey.timeRemainingKey) as! NSTimeInterval
         let activityComplete = aDecoder.decodeObjectForKey(PropertyKey.completeKey) as! Bool
         let activityInProgress = aDecoder.decodeObjectForKey(PropertyKey.inProgressKey) as! Bool
+        let currentAngle = aDecoder.decodeObjectForKey(PropertyKey.angleKey) as! Int
         
         // Must call designated initializer
-        self.init(activityName: activityName, activityTime: activityTime, activityTimeRemaining: activityTimeRemaining, activityComplete: activityComplete, activityInProgress: activityInProgress)
+        self.init(activityName: activityName, activityTime: activityTime, activityTimeRemaining: activityTimeRemaining, activityComplete: activityComplete, activityInProgress: activityInProgress, currentAngle: currentAngle)
         
     }
     
@@ -93,4 +100,3 @@ class Activities: NSObject, NSCoding {
     static let ArchiveURL = DocumentsDirectory.URLByAppendingPathComponent("activities")
     
 }
-
